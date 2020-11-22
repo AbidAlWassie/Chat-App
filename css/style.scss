@@ -79,6 +79,7 @@ textarea:focus {
   border-radius: 10px 0 0 0;
   box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
   z-index: 1;
+  position: relative;
 }
 
 .input-custom {
@@ -103,7 +104,8 @@ textarea:focus {
 .material-icons.inner{
   position: absolute;
   font-size: 1.25rem;
-  top: 25px;
+  left: 25px;
+  top: 26px;
   //bottom: 0;
   color: #eeeeee;
 }
