@@ -684,18 +684,28 @@ textarea {
 }
 
 .search-container {
+  grid-area: search-container;
   border-radius: 10px 0 0 0;
   box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
   z-index: 1;
 }
 
+.conversation-list {
+  grid-area: conversation-list;
+}
+
 .new-message-container {
+  grid-area: new-message-container;
   border-top: 1px solid rgba(0, 0, 0, 0.75);
   border-radius: 0 0 0 10px;
 }
 
 .chat-title, .chat-form {
   background: #eee;
+}
+
+.chat-title {
+  grid-area: chat-title;
 }
 
 /*# sourceMappingURL=style.css.map */
