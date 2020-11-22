@@ -694,7 +694,6 @@ textarea {
 }
 
 .input-custom {
-  color: #eeeeee;
   border: 0;
   outline: none;
   font-weight: 500;
@@ -702,6 +701,22 @@ textarea {
   height: 30px;
   padding-left: 30px;
   padding-right: 20px;
+}
+
+.input-custom.transparent {
+  background: #ffffff30;
+  color: white;
+}
+
+.input-custom.transparent::placeholder {
+  color: white;
+}
+
+.material-icons.inner {
+  position: absolute;
+  font-size: 1.25rem;
+  top: 25px;
+  color: #eeeeee;
 }
 
 .conversation-list {
