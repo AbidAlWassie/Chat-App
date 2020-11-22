@@ -315,7 +315,7 @@ body {
   font-size: 16px !important;
   font-family: "Open Sans", "Poppins", sans-serif !important;
   height: 100%;
-  background: #fafafa;
+  background: linear-gradient(90deg, #020024 0%, #00adff 0%, #00329a 100%);
 }
 
 .navbar {
