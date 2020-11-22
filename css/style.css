@@ -669,7 +669,7 @@ textarea {
 
 .chat-container {
   display: grid;
-  grid: "search-container chat-title" 71px "conversation-list chat-message-list" 1fr "new-message" 78px/275px 1fr;
+  grid: "search-container chat-title" 71px "conversation-list chat-message-list" 1fr "new-message-container chat-form" 78px/275px 1fr;
   min-width: 800px;
   max-width: 1000px;
   max-height: 800px;
