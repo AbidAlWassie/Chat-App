@@ -813,12 +813,8 @@ textarea:focus {
 
 .chat-container {
   display: grid;
-  grid: "search-container chat-title" 71px "conversation-list chat-message-list" 1fr "new-message-container chat-form" 78px/275px 1fr;
-  min-width: 800px;
-  max-width: 1000px;
-  max-height: 800px;
   width: 100%;
-  height: 95vh;
+  height: 100vh;
   background: #fff;
   border-radius: 10px;
 }
@@ -865,33 +861,48 @@ textarea:focus {
   color: #eeeeee;
 }
 
-.conversation-list {
-  grid-area: conversation-list;
+.item1 {
+  grid-area: header;
 }
 
-.new-message-container {
-  grid-area: new-message-container;
-  border-top: 1px solid rgba(0, 0, 0, 0.75);
-  border-radius: 0 0 0 10px;
+.item2 {
+  grid-area: title;
 }
 
-.chat-title, .chat-form {
-  background: #eee;
+.item3 {
+  grid-area: search;
 }
 
-.chat-title {
-  grid-area: chat-title;
-  color: #0048aa;
-  font-weight: 500;
-  font-size: 2.8rem;
-  border-radius: 0 10px 0 0;
-  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
+.item4 {
+  grid-area: people;
 }
 
-.chat-form {
-  grid-area: chat-form;
-  border-radius: 0 0 10px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.25);
+.item5 {
+  grid-area: main;
+}
+
+.item6 {
+  grid-area: right;
+}
+
+.item7 {
+  grid-area: input;
+}
+
+.chat-container {
+  display: grid;
+  grid-template-columns: minmax(200px, 300px) minmax(600px, 500px) minmax(300px, 300px) minmax(300px, 300px);
+  grid-template-areas: "title header header header header header" "search main main main right right" "people main main main right right" "people input input input right right";
+  grid-gap: 1px;
+  background-color: #c6c6c6;
+  padding: 1px;
+}
+
+.chat-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
