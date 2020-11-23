@@ -812,11 +812,9 @@ textarea:focus {
 }
 
 .chat-container {
-  display: grid;
   width: 100%;
   height: 100% !important;
   background: #fff;
-  border-radius: 10px;
 }
 
 .search-container, .conversation-list, .new-message-container {
@@ -840,8 +838,18 @@ textarea:focus {
   font-weight: 500;
   border-radius: 2px;
   height: 30px;
-  padding-left: 30px;
-  padding-right: 20px;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+.input-custom.fw {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+}
+
+.input-custom.round {
+  border-radius: 20px;
 }
 
 .input-custom.transparent {
@@ -856,8 +864,8 @@ textarea:focus {
 .material-icons.inner {
   position: absolute;
   font-size: 1.25rem;
-  left: 25px;
-  top: 26px;
+  left: 15px;
+  top: 37px;
   color: #eeeeee;
 }
 
@@ -890,13 +898,13 @@ textarea:focus {
 }
 
 .item2, .item3, .item4 {
-  background: linear-gradient(90deg, #020024 0%, #0048ff 0%, #00329a 100%);
+  background: #0054ad !important;
   color: white;
 }
 
 .chat-container {
   display: grid;
-  grid-template-columns: minmax(200px, 300px) minmax(600px, 500px) minmax(300px, 300px) minmax(300px, 300px);
+  grid-template-columns: 15vw 45vw 10vw 10vw 10vw;
   grid-template-rows: 10vh 10vh 70vh 10vh;
   grid-template-areas: "title header header header header header" "search main main main right right" "people main main main right right" "people input input input right right";
   grid-gap: 1px;
