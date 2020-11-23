@@ -814,7 +814,7 @@ textarea:focus {
 .chat-container {
   display: grid;
   width: 100%;
-  height: 100vh;
+  height: 100% !important;
   background: #fff;
   border-radius: 10px;
 }
@@ -892,6 +892,7 @@ textarea:focus {
 .chat-container {
   display: grid;
   grid-template-columns: minmax(200px, 300px) minmax(600px, 500px) minmax(300px, 300px) minmax(300px, 300px);
+  grid-template-rows: 10vh 10vh 70vh 10vh;
   grid-template-areas: "title header header header header header" "search main main main right right" "people main main main right right" "people input input input right right";
   grid-gap: 1px;
   background-color: #c6c6c6;
