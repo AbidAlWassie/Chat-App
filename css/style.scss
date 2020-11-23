@@ -50,8 +50,6 @@ textarea:focus {
   width: 200px;
 }
 
-
-
 .chat-container {
   //display: grid;
   width: 100%;
@@ -67,9 +65,8 @@ textarea:focus {
 .search-container {
   display: grid;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 10px;
   grid-area: search-container;
-  border-radius: 10px 0 0 0;
   box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
   z-index: 1;
   position: relative;
@@ -92,7 +89,7 @@ textarea:focus {
 .input-custom.fw {
   display: flex;
   justify-content: center;
-  width: 95%;
+  width: 98%;
 }
 .input-custom.round {
   border-radius: 20px;
@@ -110,8 +107,8 @@ textarea:focus {
 .material-icons.inner{
   position: absolute;
   font-size: 1.25rem;
-  left: 15px;
-  top: 37px;
+  left: 25px;
+  top: 13.5px;
   //bottom: 0;
   color: #eeeeee;
 }
@@ -136,7 +133,7 @@ textarea:focus {
 .chat-container {
   display: grid;
   grid-template-columns: 15vw 45vw 10vw 10vw 10vw;
-  grid-template-rows: 10vh 10vh 70vh 10vh;
+  grid-template-rows: 7vh 5vh 81vh 7vh;
   grid-template-areas:
     'title header header header header header'
     'search main main main right right'
@@ -150,6 +147,11 @@ textarea:focus {
 .chat-container > div {
   background-color: rgb(255, 255, 255);
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+  //font-size: 30px;
+}
+
+.conversation.list.item {
+  display: flex;
+  padding: 10px;
+  align-items: center;
 }

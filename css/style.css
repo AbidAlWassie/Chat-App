@@ -132,6 +132,10 @@ h1, h2, h3, h4, h5, h6 {
   background: #0075F6 !important;
 }
 
+.mr-12 {
+  margin-right: 12px;
+}
+
 .mr-2, .mx-2 {
   margin-right: 0.5rem !important;
 }
@@ -767,6 +771,15 @@ textarea {
   border-radius: 5px;
 }
 
+.img-rounded {
+  border-radius: 50%;
+}
+
+.img-face {
+  background-size: contain !important;
+  max-width: 50px !important;
+}
+
 :root {
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -824,9 +837,8 @@ textarea:focus {
 .search-container {
   display: grid;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 10px;
   grid-area: search-container;
-  border-radius: 10px 0 0 0;
   box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
   z-index: 1;
   position: relative;
@@ -845,7 +857,7 @@ textarea:focus {
 .input-custom.fw {
   display: flex;
   justify-content: center;
-  width: 95%;
+  width: 98%;
 }
 
 .input-custom.round {
@@ -864,8 +876,8 @@ textarea:focus {
 .material-icons.inner {
   position: absolute;
   font-size: 1.25rem;
-  left: 15px;
-  top: 37px;
+  left: 25px;
+  top: 13.5px;
   color: #eeeeee;
 }
 
@@ -909,7 +921,7 @@ textarea:focus {
 .chat-container {
   display: grid;
   grid-template-columns: 15vw 45vw 10vw 10vw 10vw;
-  grid-template-rows: 10vh 10vh 70vh 10vh;
+  grid-template-rows: 7vh 5vh 81vh 7vh;
   grid-template-areas: "title header header header header header" "search main main main right right" "people main main main right right" "people input input input right right";
   grid-gap: 1px;
   background-color: #c6c6c6;
@@ -919,8 +931,12 @@ textarea:focus {
 .chat-container > div {
   background-color: white;
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+}
+
+.conversation.list.item {
+  display: flex;
+  padding: 10px;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

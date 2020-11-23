@@ -132,6 +132,10 @@ h1, h2, h3, h4, h5, h6 {
   background: #0075F6 !important;
 }
 
+.mr-12 {
+  margin-right: 12px;
+}
+
 .mr-2, .mx-2 {
   margin-right: 0.5rem !important;
 }
@@ -807,4 +811,15 @@ textarea {
 .form-control {
   padding: 10px 10px;
   border-radius: 5px;
+}
+
+.img-rounded {
+  border-radius: 50%;
+
+}
+
+.img-face {
+  background-size: contain !important;
+  max-width: 50px !important;
+  //max-height: 50px !important;
 }
