@@ -902,6 +902,10 @@ textarea:focus {
   color: white;
 }
 
+.item4 {
+  overflow-y: scroll;
+}
+
 .chat-container {
   display: grid;
   grid-template-columns: 15vw 45vw 10vw 10vw 10vw;
