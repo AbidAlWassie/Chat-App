@@ -889,6 +889,11 @@ textarea:focus {
   grid-area: input;
 }
 
+.item2, .item3, .item4 {
+  background: linear-gradient(90deg, #020024 0%, #0048ff 0%, #00329a 100%);
+  color: white;
+}
+
 .chat-container {
   display: grid;
   grid-template-columns: minmax(200px, 300px) minmax(600px, 500px) minmax(300px, 300px) minmax(300px, 300px);

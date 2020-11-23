@@ -152,6 +152,11 @@ textarea:focus {
 .item6 { grid-area: right; }
 .item7 { grid-area: input; }
 
+.item2, .item3, .item4 {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(0, 72, 255) 0%, rgb(0, 50, 154) 100%);
+  color: white;
+}
+
 .chat-container {
   display: grid;
   grid-template-columns: minmax(200px, 300px) minmax(600px, 500px)  minmax(300px, 300px) minmax(300px, 300px);
