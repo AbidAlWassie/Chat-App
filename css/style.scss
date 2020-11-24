@@ -67,11 +67,8 @@ textarea:focus {
 .input-container {
   display: grid;
   align-items: center;
-  //grid-area: input-container;
-  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
   z-index: 1;
   position: relative;
-  //padding: 0 10px;
 }
 
 .input-custom {
@@ -127,7 +124,7 @@ textarea:focus {
 
 .item1 {
   grid-area: header;
-  border-bottom: 1px solid #0f0f0f;
+  border-bottom: 1px solid #EDEDED;
 }
 
 .item2 {
@@ -150,6 +147,7 @@ textarea:focus {
 
 .item6 {
   grid-area: right;
+  border-left: 1px solid #EDEDED;
 }
 
 .item7 {
@@ -157,6 +155,7 @@ textarea:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid #EDEDED;
 }
 
 .item2, .item3, .item4 {
