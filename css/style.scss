@@ -78,11 +78,19 @@ textarea:focus {
   border-radius: 2px;
   height: 30px;
   margin: 0 auto;
-  padding-left: 35px;
+  //padding-left: 35px;
   //margin-right: 20px;
   //padding-right: 20px;
   //padding-top: 20px;
   //padding-bottom: 20px;
+}
+
+.input-custom.search {
+  padding-left: 35px;
+}
+
+.input-custom.text {
+  padding-left: 15px;
 }
 
 .input-custom.fw {
@@ -121,10 +129,16 @@ textarea:focus {
   color: #eeeeee;
 }
 
+.outer {
+  background: #0080FF;
+  color: #ffffff;
+  padding: 3px 3px;
+}
+
 
 .item1 {
   grid-area: header;
-  border-bottom: 1px solid #EDEDED;
+  border-bottom: 2px solid #EDEDED;
 }
 
 .item2 {
@@ -148,7 +162,7 @@ textarea:focus {
 
 .item6 {
   grid-area: right;
-  border-left: 1px solid #EDEDED;
+  border-left: 2px solid #EDEDED;
 }
 
 .item7 {
@@ -156,7 +170,7 @@ textarea:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #EDEDED;
+  border-top: 2px solid #EDEDED;
 }
 
 .item2, .item3, .item4 {
