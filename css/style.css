@@ -99,15 +99,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::-webkit-scrollbar-track {
-  background: #d1d1d1;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #a1a1a1;
+  background: rgba(88, 167, 255, 0.4);
+  border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #8b8b8b;
+  background: rgba(88, 167, 255, 0.5);
 }
 
 .highlightSe {
@@ -862,7 +863,7 @@ textarea:focus {
   border-radius: 2px;
   height: 30px;
   margin: 0 auto;
-  padding-left: 40px;
+  padding-left: 35px;
 }
 
 .input-custom.fw {
@@ -896,13 +897,14 @@ textarea:focus {
 .material-icons.inner {
   position: absolute;
   font-size: 1.25rem;
-  left: 25px;
+  left: 30px;
   top: 13.5px;
   color: #eeeeee;
 }
 
 .item1 {
   grid-area: header;
+  border-bottom: 1px solid #0f0f0f;
 }
 
 .item2 {
