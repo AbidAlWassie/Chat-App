@@ -103,12 +103,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(88, 167, 255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
   border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(88, 167, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .highlightSe {
@@ -778,7 +778,7 @@ textarea {
 
 .img-face {
   background-size: contain !important;
-  max-width: 50px !important;
+  max-width: 40px !important;
 }
 
 .c-blue1 {
@@ -922,6 +922,7 @@ textarea:focus {
 
 .item5 {
   grid-area: main;
+  background: #E8E8E8;
 }
 
 .item6 {
@@ -953,7 +954,6 @@ textarea:focus {
 }
 
 .chat-container > div {
-  background-color: white;
   text-align: center;
 }
 
@@ -961,6 +961,10 @@ textarea:focus {
   display: flex;
   padding: 10px;
   align-items: center;
+}
+
+.conversation.list.item.active {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */
