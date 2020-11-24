@@ -19,7 +19,6 @@ body {
   font-size: 16px !important;
   font-family: 'Open Sans', 'Poppins', sans-serif !important;
   height: 100%;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,173,255,1) 0%, rgba(0,50,154,1) 100%);
   //background: rgb(250, 250, 250);
 }
 
@@ -50,13 +49,6 @@ textarea:focus {
   width: 200px;
 }
 
-.chat-container {
-  //display: grid;
-  width: 100%;
-  height: 100% !important;
-  background: #fff;
-  //border-radius: 10px;
-}
 
 .search-container, .conversation-list, .new-message-container {
   background: #0048aa;
@@ -72,6 +64,16 @@ textarea:focus {
   position: relative;
 }
 
+.input-container {
+  display: grid;
+  align-items: center;
+  //grid-area: input-container;
+  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
+  z-index: 1;
+  position: relative;
+  //padding: 0 10px;
+}
+
 .input-custom {
   border: 0;
   outline: none;
@@ -79,8 +81,8 @@ textarea:focus {
   border-radius: 2px;
   height: 30px;
   margin: 0 auto;
-  //margin-right: 20px;
   padding-left: 40px;
+  //margin-right: 20px;
   //padding-right: 20px;
   //padding-top: 20px;
   //padding-bottom: 20px;
@@ -89,15 +91,24 @@ textarea:focus {
 .input-custom.fw {
   display: flex;
   justify-content: center;
-  width: 98%;
+  width: 92%;
 }
 .input-custom.round {
   border-radius: 20px;
 }
 
+.material-icons.round {
+  border-radius: 50%;
+}
+
 .input-custom.transparent {
   background: #ffffff30;
   color: white;
+}
+
+.input-custom.grey {
+  background: #eeeeee;
+  color: #000;
 }
 
 .input-custom.transparent::placeholder {
@@ -113,22 +124,46 @@ textarea:focus {
   color: #eeeeee;
 }
 
-.item1 { grid-area: header; }
-.item2 { grid-area: title; }
-.item3 { grid-area: search; }
-.item4 { grid-area: people; }
-.item5 { grid-area: main; }
-.item6 { grid-area: right; }
-.item7 { grid-area: input; }
+
+.item1 {
+  grid-area: header;
+  border-bottom: 1px solid #0f0f0f;
+}
+
+.item2 {
+  grid-area: title;
+}
+
+.item3 {
+  grid-area: search;
+}
+
+.item4 {
+  grid-area: people;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.item5 {
+  grid-area: main;
+}
+
+.item6 {
+  grid-area: right;
+}
+
+.item7 {
+  grid-area: input;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .item2, .item3, .item4 {
   background: #0054ad !important;
   color: white;
 }
 
-.item4 {
-  overflow-y: scroll;
-}
 
 .chat-container {
   display: grid;
@@ -139,9 +174,11 @@ textarea:focus {
     'search main main main right right'
     'people main main main right right'
     'people input input input right right';
-  grid-gap: 1px;
-  background-color: rgb(198, 198, 198);
-  padding: 1px;
+  width: 100%;
+  height: 100% !important;
+  background: #fff;
+  //grid-gap: 1px;
+  //padding: 1px;
 }
 
 .chat-container > div {
