@@ -60,6 +60,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+.header-left {
+  float: left;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -1001,7 +1005,10 @@ i, img {
 
 .conversation.list.item {
   display: flex;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 0;
+  padding-left: 20px;
   align-items: center;
   min-width: 100% !important;
   cursor: pointer;
@@ -1029,8 +1036,20 @@ i, img {
   right: 5px;
 }
 
+.user-options-holder {
+  position: relative;
+}
+
+.user-options-holder h2 {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .user-actions {
   display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: absolute;
   top: 0;
   right: 5px;
