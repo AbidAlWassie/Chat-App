@@ -772,10 +772,6 @@ textarea {
   border-radius: 50%;
 }
 
-.img-face {
-  background-size: contain !important;
-  max-width: 40px !important;
-}
 
 .c-blue1 {
   background: #0054AD;

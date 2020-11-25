@@ -410,6 +410,22 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 100px;
 }
 
+.mtb-1 {
+  margin: 1px auto;
+}
+
+.mtb-2 {
+  margin: 2px auto;
+}
+
+.mtb-3 {
+  margin: 3px auto;
+}
+
+.mtb-4 {
+  margin: 4px auto;
+}
+
 .mtb-5 {
   margin: 5px auto;
 }
@@ -999,10 +1015,6 @@ i, img {
   background: #fff;
 }
 
-.chat-container > div {
-  text-align: center;
-}
-
 .conversation.list.item {
   display: flex;
   padding-top: 10px;
@@ -1023,6 +1035,46 @@ i, img {
   padding: 10px;
   align-items: center;
   cursor: text;
+}
+
+.message-list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.message-list.me {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+.message-list.me > .avatar {
+  display: none;
+}
+
+.avatar {
+  position: absolute;
+  bottom: 0;
+  left: 4px;
+}
+
+.message-list-item {
+  display: inline-block !important;
+  padding: 5px;
+  border-radius: 20px;
+  background: #fff;
+  margin-left: 40px;
+}
+
+.img-face {
+  background-size: contain !important;
+  max-width: 40px !important;
+}
+
+.avatar {
+  background-size: contain !important;
+  max-width: 32px !important;
 }
 
 .menu-options-holder {

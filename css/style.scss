@@ -58,7 +58,6 @@ i, img {
   width: 200px;
 }
 
-
 .search-container, .conversation-list, .new-message-container {
   background: #0048aa;
 }
@@ -80,11 +79,6 @@ i, img {
   border-radius: 2px;
   height: 30px;
   margin: 0 auto;
-  //padding-left: 35px;
-  //margin-right: 20px;
-  //padding-right: 20px;
-  //padding-top: 20px;
-  //padding-bottom: 20px;
 }
 
 .input-custom.search {
@@ -141,7 +135,6 @@ i, img {
   padding: 3px 3px;
 }
 
-
 .item1 {
   grid-area: header;
   border-bottom: 2px solid #EDEDED;
@@ -175,8 +168,6 @@ i, img {
   grid-area: input;
   //border-top: 2px solid #EDEDED;
 }
-
-
 
 .item2, .item3, .item4 {
   background: #0054ad !important;
@@ -223,7 +214,7 @@ i, img {
 
 .chat-container > div {
   //background-color: rgb(255, 255, 255);
-  text-align: center;
+  //text-align: center;
   //font-size: 30px;
 }
 
@@ -251,6 +242,47 @@ i, img {
   padding: 10px;
   align-items: center;
   cursor: text;
+}
+
+.message-list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.message-list.me {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+.message-list.me > .avatar {
+  display: none;
+}
+
+
+.avatar {
+  position: absolute;
+  bottom: 0;
+  left: 4px;
+}
+
+.message-list-item {
+  display: inline-block !important;
+  padding: 5px;
+  border-radius: 20px;
+  background: #fff;
+  margin-left: 40px;
+}
+
+.img-face {
+  background-size: contain !important;
+  max-width: 40px !important;
+}
+
+.avatar {
+  background-size: contain !important;
+  max-width: 32px !important;
 }
 
 .menu-options-holder {
