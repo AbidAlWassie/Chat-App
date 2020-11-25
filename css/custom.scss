@@ -5,7 +5,8 @@
 
 
 ul, ol, dl {
-  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
   list-style-type: none;
   padding: 0;
 }
@@ -44,7 +45,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  /* margin: 0 auto 0 auto; */
+  margin: 0 auto 0 auto;
 }
 
 .bigheading {

@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1030px) {
+  .chat-container {
+    grid-template-columns: 230px 45vw 10vw 10vw 10vw !important;
+    grid-template-rows: 7vh 5vh 81vh 7vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
