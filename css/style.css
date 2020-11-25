@@ -902,6 +902,14 @@ i, img {
   color: #eeeeee;
 }
 
+.material-icons.blue {
+  color: #0099ff;
+}
+
+.material-icons.mid {
+  font-size: 30px;
+}
+
 .outer {
   background: #0080FF;
   color: #ffffff;
@@ -998,8 +1006,26 @@ i, img {
   display: flex;
   padding: 10px;
   align-items: center;
-  min-width: 100% !important;
   cursor: text;
+}
+
+.menu-options-holder {
+  position: relative;
+}
+
+.chat-actions {
+  display: flex;
+  position: absolute;
+  top: -45px;
+  right: 5px;
+}
+
+.v-list li {
+  margin-right: 12px;
+}
+
+.v-list li:last-child {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
