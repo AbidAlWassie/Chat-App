@@ -260,7 +260,6 @@ i, img {
   display: none;
 }
 
-
 .avatar {
   position: absolute;
   bottom: 0;
@@ -272,7 +271,21 @@ i, img {
   padding: 5px;
   border-radius: 20px;
   background: #fff;
+  //margin-left: 40px;
+}
+
+.list-text {
   margin-left: 40px;
+}
+
+.list-text.me {
+  margin-left: 0 !important;
+  margin-right: 10px !important;
+  position: relative;
+}
+
+.list-text.me .message-list-item {
+  float: right;
 }
 
 .img-face {
