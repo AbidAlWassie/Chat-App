@@ -7,6 +7,14 @@
     grid-template-rows: 7vh 5vh 81vh 7vh;
   }
 }
+@media only screen and (max-width: 950px) {
+  .conversation.list.item {
+    display: flex;
+    align-items: center;
+    min-width: 100% !important;
+    cursor: pointer;
+  }
+}
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1066,17 +1074,25 @@ i, img {
 
 .conversation.list.item {
   display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   padding-right: 0;
   padding-left: 20px;
-  align-items: center;
-  min-width: 100% !important;
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .conversation.list.item.active {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.overview {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.85;
 }
 
 .message-list {
