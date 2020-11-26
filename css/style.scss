@@ -315,12 +315,16 @@ i, img {
 
 .message-list-item {
   display: inline-block !important;
-  padding: 5px;
+  padding: 10px;
   border-radius: 20px;
   background: #fff;
+  max-width: 30vw;
   //margin-left: 40px;
 }
 
+//.message-list-item span {
+//  //max-width: 20vw;
+//}
 .list-text {
   margin-left: 40px;
 }

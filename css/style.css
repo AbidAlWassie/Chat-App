@@ -1103,9 +1103,10 @@ i, img {
 
 .message-list-item {
   display: inline-block !important;
-  padding: 5px;
+  padding: 10px;
   border-radius: 20px;
   background: #fff;
+  max-width: 30vw;
 }
 
 .list-text {
