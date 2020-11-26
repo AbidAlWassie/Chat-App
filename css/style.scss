@@ -52,6 +52,10 @@ i, img {
   //color: #000;
 }
 
+.message-list-item.me ::selection{
+  background: rgba(255, 255, 255, 0.61);
+}
+
 .btn-form {
   border-radius: 50px !important;
   height: 50px;
