@@ -985,7 +985,7 @@ i, img {
 
 .item5 {
   grid-area: main;
-  background: #E8E8E8;
+  background: #ececec;
   overflow-y: auto;
   overflow-x: hidden;
 }
