@@ -218,6 +218,55 @@ i, img {
   //font-size: 30px;
 }
 
+//TITLE SECTION
+.user-options-holder h2 {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.user-actions {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+
+//HEADER SECTION
+.menu-options-holder {
+  position: relative;
+}
+
+.chat-actions {
+  display: flex;
+  position: absolute;
+  top: -45px;
+  right: 5px;
+}
+
+.user-options-holder {
+  position: relative;
+}
+
+.v-list li {
+  margin-right: 12px;
+}
+
+.v-list li:last-child {
+  margin-right: 0;
+}
+
+.person.list.item {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  cursor: text;
+}
+
+//PEOPLE SECTION
 .conversation.list.item {
   display: flex;
   padding-top: 10px;
@@ -237,13 +286,7 @@ i, img {
   background: rgba(255, 255, 255, 0.2);
 }
 
-.person.list.item {
-  display: flex;
-  padding: 10px;
-  align-items: center;
-  cursor: text;
-}
-
+//CHAT SECTION
 .message-list {
   display: flex;
   flex-direction: row;
@@ -286,6 +329,8 @@ i, img {
 
 .list-text.me .message-list-item {
   float: right;
+  background: #0099ff;
+  color: #ffffff;
 }
 
 .img-face {
@@ -296,42 +341,4 @@ i, img {
 .avatar {
   background-size: contain !important;
   max-width: 32px !important;
-}
-
-.menu-options-holder {
-  position: relative;
-}
-
-.chat-actions {
-  display: flex;
-  position: absolute;
-  top: -45px;
-  right: 5px;
-}
-
-.user-options-holder {
-  position: relative;
-}
-
-.user-options-holder h2 {
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.user-actions {
-  display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  position: absolute;
-  top: 0;
-  right: 5px;
-}
-
-.v-list li {
-  margin-right: 12px;
-}
-
-.v-list li:last-child {
-  margin-right: 0;
 }
