@@ -1028,11 +1028,11 @@ i, img {
 
 .chat-container {
   display: grid;
-  grid-template-columns: 350px 45vw 10vw 10vw 10vw;
-  grid-template-rows: 7vh 5vh 81vh 7vh;
-  grid-template-areas: "title header header header header header" "search main main main right right" "people main main main right right" "people input input input right right";
+  grid-template-columns: 20em 1fr 20em;
+  grid-template-rows: 64px 46px 1fr 64px;
+  grid-template-areas: "title header header" "search main right" "people main right" "people input right";
   width: 100%;
-  height: 100% !important;
+  max-height: 100vh !important;
   background: #fff;
 }
 
@@ -1146,7 +1146,7 @@ i, img {
 
 .list-text.me .message-list-item {
   float: right;
-  background: #0099ff;
+  background: #0090ff;
   color: #ffffff;
 }
 
