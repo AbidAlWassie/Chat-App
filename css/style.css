@@ -1,20 +1,5 @@
-@import url("aos.css");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css");
-@media only screen and (max-width: 1030px) {
-  .chat-container {
-    grid-template-columns: 230px 45vw 10vw 10vw 10vw !important;
-    grid-template-rows: 7vh 5vh 81vh 7vh;
-  }
-}
-@media only screen and (max-width: 950px) {
-  .conversation.list.item {
-    display: flex;
-    align-items: center;
-    min-width: 100% !important;
-    cursor: pointer;
-  }
-}
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -883,6 +868,9 @@ i, img {
 }
 
 .btn-form {
+  -webkit-border-radius: 50px !important;
+  -moz-border-radius: 50px !important;
+  -ms-border-radius: 50px !important;
   border-radius: 50px !important;
   height: 50px;
   width: 200px;
@@ -906,6 +894,9 @@ i, img {
   border: 0;
   outline: none;
   font-weight: 500;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
   border-radius: 2px;
   height: 30px;
   margin: 0 auto;
@@ -926,10 +917,16 @@ i, img {
 }
 
 .input-custom.round {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
   border-radius: 20px;
 }
 
 .material-icons.round {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
   border-radius: 50%;
 }
 
@@ -1129,6 +1126,9 @@ i, img {
 .message-list-item {
   display: inline-block !important;
   padding: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
   border-radius: 20px;
   background: #fff;
   max-width: 30vw;
