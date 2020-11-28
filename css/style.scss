@@ -46,7 +46,7 @@ textarea:focus {
 }
 
 i, img {
-  user-select: none;
+  @include user-select(none);
 }
 
 ::selection {
@@ -69,7 +69,7 @@ i, img {
 }
 
 .search-container {
-  display: grid;
+  @include grid;
   align-items: center;
   padding: 0 10px;
   grid-area: search-container;
@@ -96,7 +96,7 @@ i, img {
 }
 
 .input-custom.fw {
-  display: flex;
+  @include flex;
   justify-content: center;
   min-width: 92% !important;
 }
@@ -113,7 +113,6 @@ i, img {
   font-size: 1.25rem;
   left: 30px;
   top: 13.5px;
-  //bottom: 0;
   color: #eeeeee;
 }
 
@@ -182,7 +181,7 @@ i, img {
 }
 
 .input-container {
-  display: flex;
+  @include flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
@@ -206,9 +205,11 @@ i, img {
 
 //GRID MAIN
 .chat-container {
-  display: grid;
-  grid-template-columns: 20em 1fr 20em;
-  grid-template-rows: 64px 46px 1fr 64px;
+  @include grid;
+  @include grid-template-columns(20em 1fr 20em);
+  @include grid-template-rows(64px 46px 1fr 64px);
+  //grid-template-columns: 20em 1fr 20em;
+  //grid-template-rows: 64px 46px 1fr 64px;
   grid-template-areas:
     'title header header'
     'search main right'
@@ -230,7 +231,7 @@ i, img {
 }
 
 .user-actions {
-  display: flex;
+  @include flex;
   padding-top: 10px;
   padding-bottom: 10px;
   position: absolute;
@@ -245,7 +246,7 @@ i, img {
 }
 
 .chat-actions {
-  display: flex;
+  @include flex;
   position: absolute;
   top: -45px;
   right: 5px;
@@ -264,7 +265,7 @@ i, img {
 }
 
 .person.list.item {
-  display: flex;
+  @include flex;
   padding: 10px;
   align-items: center;
   cursor: text;
@@ -272,11 +273,8 @@ i, img {
 
 //PEOPLE SECTION
 .conversation.list.item {
-  display: flex;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-right: 0;
-  padding-left: 20px;
+  @include flex;
+  padding: 13px 0 13px 20px;
   //align-items: center;
   //min-width: 100% !important;
   cursor: pointer;
@@ -306,13 +304,13 @@ i, img {
 
 //CHAT SECTION
 .message-list {
-  display: flex;
+  @include flex;
   flex-direction: row;
   position: relative;
 }
 
 .message-list.me {
-  display: flex;
+  @include flex;
   flex-direction: row-reverse;
   position: relative;
 }
