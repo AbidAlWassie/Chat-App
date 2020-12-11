@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css");
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1300px) {
   .chat-container {
-    -ms-grid-columns: 20em 1fr 20em;
-    grid-template-columns: 20em 1fr 20em;
-    -ms-grid-rows: 64px 46px 1fr 64px;
-    grid-template-rows: 64px 46px 1fr 64px;
+    -ms-grid-columns: 20em 1fr 15em !important;
+    grid-template-columns: 20em 1fr 15em !important;
+    -ms-grid-rows: 64px 46px 1fr 64px !important;
+    grid-template-rows: 64px 46px 1fr 64px !important;
   }
 }
 @media only screen and (max-width: 1150px) {
@@ -18,9 +18,29 @@
     width: 0;
   }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .chat-container {
+    -ms-grid-columns: 17em 1fr 15em !important;
+    grid-template-columns: 17em 1fr 15em !important;
     grid-template-areas: "title header header" "search main main" "people main main" "people input input" !important;
+  }
+}
+@media only screen and (max-width: 790px) {
+  .chat-container {
+    width: 100vw !important;
+    -ms-grid-columns: 100% !important;
+    grid-template-columns: 100% !important;
+    grid-template-areas: "title" "search" "people" "people" !important;
+  }
+
+  .item1, .item5, .item6, .item7 {
+    display: none;
+    width: 0;
+  }
+
+  .item7 > * {
+    display: none !important;
+    width: 0;
   }
 }
 *, *::before, *::after {
