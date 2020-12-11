@@ -25,7 +25,14 @@
     grid-template-areas: "title header header" "search main main" "people main main" "people input input" !important;
   }
 }
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 850px) {
+  .chat-container {
+    -ms-grid-columns: 16em 1fr 15em !important;
+    grid-template-columns: 16em 1fr 15em !important;
+    grid-template-areas: "title header header" "search main main" "people main main" "people input input" !important;
+  }
+}
+@media only screen and (max-width: 765px) {
   .chat-container {
     width: 100vw !important;
     -ms-grid-columns: 100% !important;
