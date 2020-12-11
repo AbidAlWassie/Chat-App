@@ -73,10 +73,10 @@
     @include grid-template-columns(100% !important);
     //@include grid-template-rows(64px 46px 1fr 64px);
     grid-template-areas:
-      'title'
-      'search'
-      'people'
-      'people' !important;
+            'title'
+            'search'
+            'people'
+            'people' !important;
   }
 
   .item1, .item5, .item6, .item7 {

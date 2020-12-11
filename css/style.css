@@ -1034,7 +1034,6 @@ i, img {
 
 .item5 {
   grid-area: main;
-  background: #ececec;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -1046,6 +1045,8 @@ i, img {
 
 .item7 {
   grid-area: input;
+  border-top: 2px solid #EDEDED;
+  margin: 0;
 }
 
 .item2, .item3, .item4 {
@@ -1060,7 +1061,6 @@ i, img {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  margin: auto 10px;
 }
 
 .input-custom.transparent {
@@ -1195,7 +1195,7 @@ i, img {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  background: #fff;
+  background: #f1f1f1;
   max-width: 30vw;
 }
 
