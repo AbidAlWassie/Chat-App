@@ -31,10 +31,10 @@
     //@include grid-template-columns(20em 1fr 20em);
     //@include grid-template-rows(64px 46px 1fr 64px);
     grid-template-areas:
-      'title header header'
-      'search main main'
-      'people main main'
-      'people input input' !important;
+            'title header header'
+            'search main main'
+            'people main main'
+            'people input input' !important;
   }
 
   .item6 {
