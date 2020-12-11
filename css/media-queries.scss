@@ -57,19 +57,21 @@
 
 @media only screen and (max-width: 850px) {
   .chat-container {
-    @include grid-template-columns(16em 1fr 15em !important);
+    width: 100vw !important;
+    @include grid-template-columns(16em 1fr !important);
     //@include grid-template-rows(64px 46px 1fr 64px);
     grid-template-areas:
-            'title header header'
-            'search main main'
-            'people main main'
-            'people input input' !important;
+            'title header'
+            'search main'
+            'people main'
+            'people input' !important;
   }
 }
 
 @media only screen and (max-width: 765px) {
   .chat-container {
     width: 100vw !important;
+    min-height: 101vh !important;
     @include grid-template-columns(100% !important);
     //@include grid-template-rows(64px 46px 1fr 64px);
     grid-template-areas:

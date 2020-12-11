@@ -27,14 +27,16 @@
 }
 @media only screen and (max-width: 850px) {
   .chat-container {
-    -ms-grid-columns: 16em 1fr 15em !important;
-    grid-template-columns: 16em 1fr 15em !important;
-    grid-template-areas: "title header header" "search main main" "people main main" "people input input" !important;
+    width: 100vw !important;
+    -ms-grid-columns: 16em 1fr !important;
+    grid-template-columns: 16em 1fr !important;
+    grid-template-areas: "title header" "search main" "people main" "people input" !important;
   }
 }
 @media only screen and (max-width: 765px) {
   .chat-container {
     width: 100vw !important;
+    min-height: 101vh !important;
     -ms-grid-columns: 100% !important;
     grid-template-columns: 100% !important;
     grid-template-areas: "title" "search" "people" "people" !important;
@@ -906,6 +908,7 @@ body {
   font-size: 16px !important;
   font-family: "Open Sans", "Poppins", sans-serif !important;
   height: 100%;
+  overflow: hidden;
 }
 
 input {
