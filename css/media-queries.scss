@@ -1,3 +1,4 @@
+@import "prefixes";
 //@media only screen and (max-width: 1030px) {
 //  .chat-container {
 //    //grid-template-columns: 230px 45vw 10vw 10vw 10vw !important;
@@ -16,5 +17,40 @@
 //    min-width: 100% !important;
 //    cursor: pointer;
 //  }
-//
 //}
+
+@media only screen and (max-width: 1000px) {
+  .chat-container {
+    @include grid-template-columns(20em 1fr 20em);
+    @include grid-template-rows(64px 46px 1fr 64px);
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .chat-container {
+    //@include grid-template-columns(20em 1fr 20em);
+    //@include grid-template-rows(64px 46px 1fr 64px);
+    grid-template-areas:
+            'title header header'
+            'search main main'
+            'people main main'
+            'people input input' !important;
+  }
+
+  .item6 {
+    display: none;
+    width: 0;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .chat-container {
+    //@include grid-template-columns(20em 1fr 20em);
+    //@include grid-template-rows(64px 46px 1fr 64px);
+    grid-template-areas:
+            'title header header'
+            'search main main'
+            'people main main'
+            'people input input' !important;
+  }
+}
