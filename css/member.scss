@@ -84,7 +84,8 @@ body {
 
 .errorMessage {
   position: relative;
-  color: $clr-grey;
+  color: $clr-lightred;
+  visibility: hidden;
 }
 
 .errorMessage .material-icons {
@@ -105,6 +106,7 @@ body {
 .form-control.success .label-name .name-content {
   transform: translateY(-150%);
   font-size: 14px;
+  font-weight: 600;
   color: $clr-blue !important;
 }
 
@@ -121,11 +123,16 @@ body {
 .form-control.error .label-name .name-content {
   transform: translateY(-150%);
   font-size: 14px;
+  font-weight: 600;
   color: $clr-red !important;
 }
 
 .form-control.error .icon-info {
   color: $clr-red;
+  visibility: visible;
+}
+
+.form-control.error .errorMessage {
   visibility: visible;
 }
 

@@ -79,7 +79,8 @@ body {
 
 .errorMessage {
   position: relative;
-  color: #b4b4b4;
+  color: #ec6a6a;
+  visibility: hidden;
 }
 
 .errorMessage .material-icons {
@@ -96,6 +97,7 @@ body {
 .form-control.success .label-name .name-content {
   transform: translateY(-150%);
   font-size: 14px;
+  font-weight: 600;
   color: #3391e0 !important;
 }
 
@@ -112,11 +114,16 @@ body {
 .form-control.error .label-name .name-content {
   transform: translateY(-150%);
   font-size: 14px;
+  font-weight: 600;
   color: #e03333 !important;
 }
 
 .form-control.error .icon-info {
   color: #e03333;
+  visibility: visible;
+}
+
+.form-control.error .errorMessage {
   visibility: visible;
 }
 
