@@ -1,5 +1,11 @@
 @import "variables";
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Open Sans", "Poppins", sans-serif;
+}
+
 .btn {
   border: none;
   padding: 5px;
@@ -22,7 +28,7 @@
 .input-item {
   width: 400px;
   position: relative;
-  height: 50px;
+  height: 60px;
   overflow: hidden;
   margin-top: 15px;
 }
