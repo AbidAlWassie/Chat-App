@@ -1,94 +1,78 @@
-window.onload = function() {
+window.onload = function () {
+  const form = document.getElementById("form");
+  const username = document.getElementById("username");
+  const email = document.getElementById("email");
+  const password = document.getElementById("password");
+  const password2 = document.getElementById("password2");
   
-  $(document).ready(function(){
+  const signUpForm = document.getElementById("formSignUp");
+  const inputName = document.querySelector(".inputName");
+  const inputEmail = document.querySelector(".inputEmail");
+  const inputPassword = document.querySelector(".inputPassword");
+  const inputConfirmPassword = document.querySelector(".inputConfirmPassword");
+  const errorMessage = document.querySelectorAll(".errorMessage");
+  
+  
+  inputName.addEventListener("blur", inputLeave);
+  inputEmail.addEventListener("blur", inputLeave);
+  inputPassword.addEventListener("blur", inputLeave);
+  inputConfirmPassword.addEventListener("blur", inputLeave);
+  
+  function inputLeave(e) {
+    e.preventDefault();
+    console.log("left")
+    checkInputs();
+  }
+  
+  
+  function checkInputs() {
     
-    var scrollWindow = function() {
-      $(window).scroll(function(){
-        var $w = $(this),
-          st = $w.scrollTop(),
-          navbar = $(".navbar"),
-          sd = $(".js-scroll-wrap");
-        navLink = $(".nav-link");
-        navbarExtended = $(".navbar-nav");
-        brandOtherLetters = $(".otherLetters");
-        btnLine = $(".btn-line");
-        
-        if (st > 150) {
-          if ( !navbar.hasClass("scrolled") ) {
-            navbar.addClass("scrolled");
-            navLink.addClass("nav-link-dark");
-            navbarExtended.addClass("navbar-nav-dark");
-            brandOtherLetters.addClass("brandLettersDark");
-            btnLine.addClass("btn-line-dark");
-          }
-        }
-        if (st < 150) {
-          if ( navbar.hasClass("scrolled") ) {
-            navbar.removeClass("scrolled sleep");
-            navLink.removeClass("nav-link-dark");
-            navbarExtended.removeClass("navbar-nav-dark");
-            brandOtherLetters.removeClass("brandLettersDark");
-            btnLine.removeClass("btn-line-dark");
-          }
-        }
-        if ( st > 350 ) {
-          if ( !navbar.hasClass("awake") ) {
-            navbar.addClass("awake");
-          }
-          
-          if(sd.length > 0) {
-            sd.addClass("sleep");
-          }
-        }
-        if ( st < 350 ) {
-          if ( navbar.hasClass("awake") ) {
-            navbar.removeClass("awake");
-            navbar.addClass("sleep");
-          }
-          if(sd.length > 0) {
-            sd.removeClass("sleep");
-          }
-        }
-      });
-    };
-    scrollWindow();
+    const usernameValue = username.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const password2Value = password2.value.trim();
     
-    
-    var anchor = $(".nav-link");
-    anchor.on('click', function(event) {
-
-      if (this.hash !== "") {
-        event.preventDefault();
-
-        var hash = this.hash;
-
-        var target = $(hash).offset().top-150;
-        $('html, body').animate({
-          scrollTop: target
-        }, 500, function(){
-          // window.location.hash = hash;
-        });
-      }
-    });
-    
-  });
-  
-  
-  const menuBtn = document.querySelector(".menu-btn");
-  
-  let showMenu = false;
-  
-  menuBtn.addEventListener("click", toggleMenu);
-  
-  function toggleMenu() {
-    if(!showMenu) {
-      menuBtn.classList.add("close");
-      showMenu = true;
+    if(usernameValue === "") {
+      setErrorFor(username, "Username cannot be blank");
     } else {
-      menuBtn.classList.remove("close");
-      showMenu = false;
+      setSuccessFor(username);
+    }
+    
+    if(emailValue === "") {
+      setErrorFor(email, "Email cannot be blank");
+    } else if (!isEmail(emailValue)) {
+      setErrorFor(email, "Not a valid email");
+    } else {
+      setSuccessFor(email);
+    }
+    
+    if(passwordValue === "") {
+      setErrorFor(password, "Password cannot be blank");
+    } else {
+      setSuccessFor(password);
+    }
+    
+    if(password2Value === "") {
+      setErrorFor(password2, "Password2 cannot be blank");
+    } else if(passwordValue !== password2Value) {
+      setErrorFor(password2, "Passwords does not match");
+    } else{
+      setSuccessFor(password2);
     }
   }
   
+  function setErrorFor(input, message) {
+    const formControl = input.parentElement.parentElement;
+    formControl.className = "form-control error";
+  }
+  
+  function setSuccessFor(input) {
+    const formControl = input.parentElement.parentElement;
+    formControl.className = "form-control success";
+  }
+  
+  function isEmail(email) {
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+  }
   
 }

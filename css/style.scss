@@ -55,6 +55,149 @@ i, img {
   //color: #000;
 }
 
+.btn {
+  border: none;
+  padding: 5px;
+}
+
+.btn.round {
+  border-radius: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  //align-items: center;
+}
+
+.heading {
+  text-align: center;
+}
+
+.input-item {
+  width: 400px;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.input-item input {
+  width: 100%;
+  height: 100%;
+  color: #595f6e;
+  padding-top: 10px;
+  border: none;
+  outline: none;
+}
+
+.input-item label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  //background: #ED694C;
+  pointer-events: none;
+  border-bottom: 3px solid $clr-grey;
+}
+
+.input-item label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid $clr-blue;
+  transform: translateX(-100%);
+  transition: transform 300ms ease-in;
+}
+
+.name-content {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 300ms ease;
+}
+
+.input-item input:focus + .label-name .name-content, .input-item input:valid + .label-name .name-content {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: $clr-blue;
+}
+
+.input-item input:focus + .label-name::after, .input-item input:valid + .label-name::after {
+  transform: translateX(0);
+}
+
+.errorMessage {
+  position: relative;
+  color: $clr-grey;
+}
+
+.errorMessage .material-icons {
+  top: -45px;
+  right: 0;
+  position: absolute;
+}
+
+.form-control.success {
+
+}
+
+.form-control.success .input-item label::after{
+  transform: translateX(0);
+  border-bottom: 3px solid $clr-blue !important;
+}
+
+.form-control.success .label-name .name-content {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: $clr-blue !important;
+}
+
+.form-control.success .icon-okay {
+  color: $clr-blue;
+  visibility: visible;
+}
+
+.form-control.error .input-item label::after{
+  transform: translateX(0);
+  border-bottom: 3px solid $clr-red !important;
+}
+
+.form-control.error .label-name .name-content {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: $clr-red !important;
+}
+
+.form-control.error .icon-info {
+  color: $clr-red;
+  visibility: visible;
+}
+
+.icon-info, .icon-okay {
+  visibility: hidden;
+}
+
+.block {
+  display: block !important;
+}
+
+.none {
+  display: none !important;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
 .message-list-item.me ::selection{
   background: rgba(255, 255, 255, 0.61);
 }
