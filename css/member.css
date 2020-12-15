@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 body {
   font-family: "Open Sans", "Poppins", sans-serif;
+  margin: 0;
+  background: #0054AD;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
 }
 
 .btn {
@@ -36,6 +42,7 @@ body {
   padding-top: 10px;
   border: none;
   outline: none;
+  opacity: 0.8;
 }
 
 .input-item label {
@@ -84,8 +91,9 @@ body {
 }
 
 .errorMessage .material-icons {
-  top: -45px;
-  right: 0;
+  font-size: 20px;
+  top: -52px;
+  right: 5px;
   position: absolute;
 }
 
@@ -145,6 +153,10 @@ body {
 
 .visible {
   visibility: visible;
+}
+
+.input-container {
+  background: rgba(0, 0, 0, 0.63);
 }
 
 /*# sourceMappingURL=member.css.map */

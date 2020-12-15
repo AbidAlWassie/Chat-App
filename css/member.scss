@@ -1,9 +1,14 @@
-@import "variables";
-
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import "variables";
 
 body {
   font-family: "Open Sans", "Poppins", sans-serif;
+  margin: 0;
+  background: #0054AD;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
 }
 
 .btn {
@@ -18,7 +23,6 @@ body {
 .input-container {
   display: flex;
   justify-content: center;
-//align-items: center;
 }
 
 .heading {
@@ -40,6 +44,7 @@ body {
   padding-top: 10px;
   border: none;
   outline: none;
+  opacity: 0.8;
 }
 
 .input-item label {
@@ -48,9 +53,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-//background: #ED694C;
   pointer-events: none;
-  border-bottom: 3px solid $clr-grey;
+  border-bottom: 3px solid #b4b4b4;
 }
 
 .input-item label::after {
@@ -60,7 +64,7 @@ body {
   bottom: -3px;
   height: 100%;
   width: 100%;
-  border-bottom: 3px solid $clr-blue;
+  border-bottom: 3px solid #3391e0;
   transform: translateX(-100%);
   transition: transform 300ms ease-in;
 }
@@ -75,7 +79,7 @@ body {
 .input-item input:focus + .label-name .name-content, .input-item input:valid + .label-name .name-content {
   transform: translateY(-150%);
   font-size: 14px;
-  color: $clr-blue;
+  color: #3391e0;
 }
 
 .input-item input:focus + .label-name::after, .input-item input:valid + .label-name::after {
@@ -84,51 +88,48 @@ body {
 
 .errorMessage {
   position: relative;
-  color: $clr-lightred;
+  color: #ec6a6a;
   visibility: hidden;
 }
 
 .errorMessage .material-icons {
-  top: -45px;
-  right: 0;
+  font-size: 20px;
+  top: -52px;
+  right: 5px;
   position: absolute;
 }
 
-.form-control.success {
-
-}
-
-.form-control.success .input-item label::after{
+.form-control.success .input-item label::after {
   transform: translateX(0);
-  border-bottom: 3px solid $clr-blue !important;
+  border-bottom: 3px solid #3391e0 !important;
 }
 
 .form-control.success .label-name .name-content {
   transform: translateY(-150%);
   font-size: 14px;
   font-weight: 600;
-  color: $clr-blue !important;
+  color: #3391e0 !important;
 }
 
 .form-control.success .icon-okay {
-  color: $clr-blue;
+  color: #3391e0;
   visibility: visible;
 }
 
-.form-control.error .input-item label::after{
+.form-control.error .input-item label::after {
   transform: translateX(0);
-  border-bottom: 3px solid $clr-red !important;
+  border-bottom: 3px solid #e03333 !important;
 }
 
 .form-control.error .label-name .name-content {
   transform: translateY(-150%);
   font-size: 14px;
   font-weight: 600;
-  color: $clr-red !important;
+  color: #e03333 !important;
 }
 
 .form-control.error .icon-info {
-  color: $clr-red;
+  color: #e03333;
   visibility: visible;
 }
 
@@ -155,3 +156,8 @@ body {
 .visible {
   visibility: visible;
 }
+
+.input-container {
+  background: rgba(0, 0, 0, 0.63);
+}
+
