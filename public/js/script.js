@@ -5,6 +5,10 @@ window.onload = function () {
   const password = document.getElementById("password");
   const password2 = document.getElementById("password2");
   
+  function showPassword() {
+  
+  }
+  
   const signUpForm = document.getElementById("formSignUp");
   const inputName = document.querySelector(".inputName");
   const inputEmail = document.querySelector(".inputEmail");
@@ -13,14 +17,14 @@ window.onload = function () {
   const errorMessage = document.querySelectorAll(".errorMessage");
   
   
-  inputName.addEventListener("blur", inputLeave);
-  inputEmail.addEventListener("blur", inputLeave);
-  inputPassword.addEventListener("blur", inputLeave);
-  inputConfirmPassword.addEventListener("blur", inputLeave);
+  inputName.addEventListener("input", inputUpdate);
+  inputEmail.addEventListener("input", inputUpdate);
+  inputPassword.addEventListener("input", inputUpdate);
+  inputConfirmPassword.addEventListener("input", inputUpdate);
   
-  function inputLeave(e) {
+  function inputUpdate(e) {
     e.preventDefault();
-    console.log("left")
+    console.log("Updated!")
     checkInputs();
   }
   
