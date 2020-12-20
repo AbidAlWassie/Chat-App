@@ -97,10 +97,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
 }
 
-.icon-show, .icon-hide {
-  visibility: hidden;
-  right: 29px !important;
-}
+
 
 .form-control.success .input-item label::after {
   transform: translateX(0);
@@ -138,6 +135,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-control.error .errorMessage {
   visibility: visible;
+}
+
+.icon-show, .icon-hide {
+  /*visibility: hidden;*/
+  right: 29px !important;
+}
+
+.icon-hide {
+  visibility: hidden;
 }
 
 .icon-info, .icon-okay {
