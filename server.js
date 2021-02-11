@@ -12,8 +12,25 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Run when the client connects
 io.on("connection", socket => {
-  console.log("New WS Connection...");
+  
+  // Welcome new user
+  socket.emit("message", "Welcome to ChatApp");
+  
+  // Broadcast when a user connects
+  socket.broadcast.emit("message", "A user has joined the chat");
+  
+  // Fire when client disconnects
+  socket.on("disconnect", () => {
+    io.emit("message", "A user has left the chat");
+  });
+  
+  // Listen for chatMessage
+  socket.on("chatMessage", (msg) => {
+    io.emit("message", msg)
+  });
+  
 });
+
 
 const PORT = 8080 || process.env.PORT;
 
