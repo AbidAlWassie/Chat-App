@@ -2,6 +2,7 @@
 @import "custom";
 @import "variables";
 @import "prefixes";
+@import "dark";
 //@import url("aos.css");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 //@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
@@ -142,7 +143,7 @@ i, img {
 
 .item1 {
   grid-area: header;
-  border-bottom: 2px solid #EDEDED;
+  //border-bottom: 2px solid #EDEDED;
 }
 
 .item2 {
@@ -168,12 +169,12 @@ i, img {
 
 .item6 {
   grid-area: right;
-  border-left: 2px solid #EDEDED;
+  border-left: 2px solid #b1b1b1;
 }
 
 .item7 {
   grid-area: input;
-  border-top: 2px solid #EDEDED;
+  border-top: 1px solid #b1b1b1;
   margin: 0;
 }
 
