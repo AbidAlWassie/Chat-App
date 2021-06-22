@@ -1,4 +1,4 @@
 # Chat-App
 
-##Work in progress
+### Work in progress
 Just created the UI.
