@@ -18,21 +18,21 @@ body {
 }
 
 .person.list.item {
-  border-bottom: 2px solid #717171;
+  border-bottom: 1px solid #464C4F;
 }
 
 .item6 {
   background: #000000;
   color: white;
+  border-left: 1px solid #464C4F !important;
 }
 .item7 {
   background: #000000;
   color: white;
+  border-top: 1px solid #464C4F !important;
 }
 
-.item5 .ss-scroll {
-  background: rgba(127, 153, 212, 0.36);
-}
+
 
 .message-list-item:not(.message-list-item.me) {
   display: inline-block !important;
@@ -45,7 +45,20 @@ body {
   max-width: 30vw;
 }
 
+.message-list-item.me {
+  margin-right: 10px;
+}
+
 .input-custom.grey {
-  background: #4e4e4e !important;
-  color: #e2e2e2 !important;
+  background: #222426 !important;
+  color: #BDB2A6 !important;
+  border-color: #3E4446;
+}
+
+.item4 .ss-scroll {
+  background: rgba(123, 185, 255, 0.2);
+}
+
+.item5 .ss-scroll {
+  background: rgba(127, 153, 212, 0.36);
 }
