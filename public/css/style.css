@@ -753,12 +753,17 @@ body {
   max-width: 30vw; }
 
 .message-list-item.me {
-  margin-right: 10px; }
+  margin-right: 10px;
+  background: #0073CC !important; }
 
 .input-custom.grey {
   background: #222426 !important;
   color: #BDB2A6 !important;
   border-color: #3E4446; }
+
+.item2, .item3, .item4 {
+  background: #00438A !important;
+  color: white; }
 
 .item4 .ss-scroll {
   background: rgba(123, 185, 255, 0.2); }
@@ -917,7 +922,7 @@ i, img {
   margin: 0; }
 
 .item2, .item3, .item4 {
-  background: #0054AD !important;
+  background: #0054AD;
   color: white; }
 
 .input-container {
