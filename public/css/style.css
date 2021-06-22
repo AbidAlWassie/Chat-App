@@ -714,12 +714,23 @@ textarea {
   background: #0080FF;
   color: #fff; }
 
+body {
+  background: #000000; }
+
 .chat-messages {
   background: #000000; }
+
+.item1 {
+  background: #000000;
+  color: white;
+  z-index: 1000; }
 
 .person {
   background: #000000;
   color: white; }
+
+.person.list.item {
+  border-bottom: 2px solid #717171; }
 
 .item6 {
   background: #000000;
@@ -728,6 +739,23 @@ textarea {
 .item7 {
   background: #000000;
   color: white; }
+
+.item5 .ss-scroll {
+  background: rgba(127, 153, 212, 0.36); }
+
+.message-list-item:not(.message-list-item.me) {
+  display: inline-block !important;
+  padding: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #202324 !important;
+  color: #DEDCD9;
+  max-width: 30vw; }
+
+.input-custom.grey {
+  background: #4e4e4e !important;
+  color: #e2e2e2 !important; }
 
 :root {
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -872,7 +900,7 @@ i, img {
 
 .item6 {
   grid-area: right;
-  border-left: 2px solid #b1b1b1; }
+  border-left: 2px solid #717171; }
 
 .item7 {
   grid-area: input;
@@ -954,7 +982,7 @@ i, img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px;
+  padding: 12px;
   align-items: center;
   cursor: text; }
 

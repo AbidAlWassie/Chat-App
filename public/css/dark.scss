@@ -1,11 +1,26 @@
+body {
+  background: #000000;
+}
+
 .chat-messages {
   background: #000000;
+}
+
+.item1 {
+  background: #000000;
+  color: white;
+  z-index: 1000;
 }
 
 .person {
   background: #000000;
   color: white;
 }
+
+.person.list.item {
+  border-bottom: 2px solid #717171;
+}
+
 .item6 {
   background: #000000;
   color: white;
@@ -13,4 +28,24 @@
 .item7 {
   background: #000000;
   color: white;
+}
+
+.item5 .ss-scroll {
+  background: rgba(127, 153, 212, 0.36);
+}
+
+.message-list-item:not(.message-list-item.me) {
+  display: inline-block !important;
+  padding: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #202324 !important;
+  color: #DEDCD9;
+  max-width: 30vw;
+}
+
+.input-custom.grey {
+  background: #4e4e4e !important;
+  color: #e2e2e2 !important;
 }

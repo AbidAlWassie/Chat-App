@@ -169,7 +169,7 @@ i, img {
 
 .item6 {
   grid-area: right;
-  border-left: 2px solid #b1b1b1;
+  border-left: 2px solid #717171;
 }
 
 .item7 {
@@ -269,7 +269,7 @@ i, img {
 
 .person.list.item {
   @include flex;
-  padding: 10px;
+  padding: 12px;
   align-items: center;
   cursor: text;
 }
