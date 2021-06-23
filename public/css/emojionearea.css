@@ -211,7 +211,7 @@
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1; }
 .emojionearea .emojionearea-picker {
-  background: #FFFFFF;
+  background: #363636;
   position: absolute;
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.32);
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.32);
@@ -251,7 +251,7 @@
     position: absolute;
     z-index: 95; }
   .emojionearea .emojionearea-picker .emojionearea-filters {
-    background: #F5F7F9;
+    background: #8e8e8e;
     padding: 0 0 0 7px;
     height: 40px; }
     .emojionearea .emojionearea-picker .emojionearea-filters .emojionearea-filter {
@@ -387,7 +387,7 @@
       font-size: 13px;
       font-weight: normal;
       color: #b2b2b2;
-      background: #FFFFFF;
+      background: #555555;
       line-height: 20px;
       margin: 0;
       padding: 7px 0 5px 6px; }
